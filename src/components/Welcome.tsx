@@ -61,18 +61,18 @@ export function Welcome() {
               Мы страхуем не только вещи. Мы помогаем защитить то, что человек запланировал.
             </h1>
             <p className="mt-4 max-w-lg text-base text-slate-200">
-              Цифровая платформа защиты жизненных планов: поездки, мероприятия, учёба и важные встречи — в одном спокойном контуре.
+              Цифровая платформа защиты жизненных планов: поездки, мероприятия, учёба и важные встречи — в одном [...]
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Button size="lg" onClick={() => enter('empty')} className="bg-white text-[var(--vtb-navy)] hover:bg-sky-50">
                 Попробовать SafeDay
               </Button>
-              <Button size="lg" variant="outline" onClick={() => enter('seeded')} className="border-white/30 bg-transparent text-white hover:bg-white/10">
+              <Button size="lg" variant="outline" onClick={() => enter('seeded')} className="border-white text-white hover:bg-white/10">
                 Войти в деморежим
               </Button>
             </div>
             <p className="mt-3 text-xs text-slate-300">
-              Без банковского логина, SMS и реальных карт. «Попробовать» — чистый профиль. «Деморежим» — заполненный учебный клиент.
+              Без банковского логина, SMS и реальных карт. «Попробовать» — чистый профиль. «Деморежим» — заполнен[...]
             </p>
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
