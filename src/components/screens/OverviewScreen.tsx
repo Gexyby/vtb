@@ -2,7 +2,7 @@
 
 import { ArrowRight, CalendarPlus, CreditCard, FileText, Shield } from 'lucide-react'
 import Link from 'next/link'
-import { Badge, Button, Card, EmptyState, PageMotion, StatusDot } from '@/components/ui'
+import { Badge, Card, EmptyState, PageMotion, StatusDot } from '@/components/ui'
 import { coverageCatalog, subscriptionConfig } from '@/lib/config'
 import { serviceStateFromTrust } from '@/lib/engine'
 import { formatDate, formatShortDate, money } from '@/lib/format'
@@ -40,24 +40,24 @@ export function OverviewScreen() {
         </p>
         <div className="mt-6 flex flex-wrap gap-2">
           <Link href="/plans?new=1">
-            <Button className="bg-white text-[var(--vtb-blue)] hover:bg-sky-50">
+            <button style={{ backgroundColor: 'white', color: '#001a4d' }} className="inline-flex items-center justify-center gap-2 rounded-xl font-medium h-11 px-4 text-sm transition hover:bg-sky-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--vtb-blue)]">
               <CalendarPlus className="h-4 w-4" /> Добавить план
-            </Button>
+            </button>
           </Link>
           <Link href="/protection">
-            <Button variant="outline" className="border-white/30 bg-transparent text-white hover:bg-white/10">
+            <button className="border border-white/30 bg-transparent text-white inline-flex items-center justify-center gap-2 rounded-xl font-medium h-11 px-4 text-sm transition hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--vtb-blue)]">
               <Shield className="h-4 w-4" /> Защитить план
-            </Button>
+            </button>
           </Link>
           <Link href="/claims">
-            <Button variant="outline" className="border-white/30 bg-transparent text-white hover:bg-white/10">
+            <button className="border border-white/30 bg-transparent text-white inline-flex items-center justify-center gap-2 rounded-xl font-medium h-11 px-4 text-sm transition hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--vtb-blue)]">
               <FileText className="h-4 w-4" /> Открыть мои обращения
-            </Button>
+            </button>
           </Link>
           <Link href="/subscription">
-            <Button variant="outline" className="border-white/30 bg-transparent text-white hover:bg-white/10">
+            <button className="border border-white/30 bg-transparent text-white inline-flex items-center justify-center gap-2 rounded-xl font-medium h-11 px-4 text-sm transition hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--vtb-blue)]">
               <CreditCard className="h-4 w-4" /> Управлять подпиской
-            </Button>
+            </button>
           </Link>
         </div>
       </section>
@@ -105,7 +105,9 @@ export function OverviewScreen() {
               text="Добавьте поездку, встречу или событие — так сервис покажет ценность защиты."
               action={
                 <Link href="/plans?new=1">
-                  <Button>Добавить план</Button>
+                  <button className="inline-flex items-center justify-center gap-2 rounded-xl font-medium h-11 px-4 text-sm transition bg-[var(--vtb-blue)] text-white shadow-[0_8px_24px_rgba(0,87,184,0.28)] hover:bg-[var(--vtb-blue-deep)] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--vtb-blue)]">
+                    Добавить план
+                  </button>
                 </Link>
               }
             />
@@ -180,7 +182,7 @@ export function OverviewScreen() {
             <Card>
               <h3 className="font-semibold">Персонализация ограничена</h3>
               <p className="mt-1 text-sm text-slate-600">
-                Демосогласие на дополнительные данные выключено — учебные подсказки по незащищённым планам скр…
+                Демосогласие на дополнительные данные выключено — учебные подсказки по незащищённым планам скрыты.
               </p>
               <Link href="/profile" className="mt-2 inline-flex text-sm text-[var(--vtb-blue)]">
                 Открыть настройки

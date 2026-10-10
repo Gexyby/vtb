@@ -14,7 +14,7 @@ const benefits = [
   },
   {
     icon: ShieldCheck,
-    title: 'Заствита планов',
+    title: 'Защита планов',
     text: 'Подберите демонстрационное покрытие под категорию события.',
   },
   {
@@ -64,12 +64,12 @@ export function Welcome() {
               Цифровая платформа защиты жизненных планов: поездки, мероприятия, учёба и важные встречи — в одном месте.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button size="lg" onClick={() => enter('empty')} className="bg-white !text-[var(--vtb-navy)] hover:bg-sky-50">
+              <button onClick={() => enter('empty')} style={{ backgroundColor: 'white', color: '#001a4d' }} className="inline-flex items-center justify-center gap-2 rounded-xl font-medium h-12 px-5 text-base transition hover:bg-sky-50 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--vtb-blue)]">
                 Попробовать SafeDay
-              </Button>
-              <Button size="lg" variant="outline" onClick={() => enter('seeded')} className="border-white/30 bg-transparent text-white hover:bg-white/10">
+              </button>
+              <button onClick={() => enter('seeded')} className="border border-white/30 bg-transparent text-white inline-flex items-center justify-center gap-2 rounded-xl font-medium h-12 px-5 text-base transition hover:bg-white/10 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--vtb-blue)]">
                 Войти в деморежим
-              </Button>
+              </button>
             </div>
             <p className="mt-3 text-xs text-slate-300">
               Без банковского логина, SMS и реальных карт. «Попробовать» — чистый профиль. «Деморежим» — заполнен демоданными.
