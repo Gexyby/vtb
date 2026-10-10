@@ -64,7 +64,7 @@ export function Welcome() {
               Цифровая платформа защиты жизненных планов: поездки, мероприятия, учёба и важные встречи — в одном месте.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Button size="lg" onClick={() => enter('empty')} className="bg-white text-[var(--vtb-blue)] hover:bg-sky-50">
+              <Button size="lg" onClick={() => enter('empty')} className="!text-[var(--vtb-blue)] bg-white hover:bg-sky-50">
                 Попробовать SafeDay
               </Button>
               <Button size="lg" variant="outline" onClick={() => enter('seeded')} className="border-white/30 bg-transparent text-white hover:bg-white/10">
