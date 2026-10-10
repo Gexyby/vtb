@@ -40,7 +40,7 @@ export function OverviewScreen() {
         </p>
         <div className="mt-6 flex flex-wrap gap-2">
           <Link href="/plans?new=1">
-            <Button className="bg-white text-[var(--vtb-navy)] hover:bg-sky-50">
+            <Button className="bg-white text-[var(--vtb-blue)] hover:bg-sky-50">
               <CalendarPlus className="h-4 w-4" /> Добавить план
             </Button>
           </Link>
@@ -180,7 +180,7 @@ export function OverviewScreen() {
             <Card>
               <h3 className="font-semibold">Персонализация ограничена</h3>
               <p className="mt-1 text-sm text-slate-600">
-                Демосогласие на дополнительные данные выключено — учебные подсказки по незащищённым планам скрыты.
+                Демосогласие на дополнительные данные выключено — учебные подсказки по незащищённым планам скр…
               </p>
               <Link href="/profile" className="mt-2 inline-flex text-sm text-[var(--vtb-blue)]">
                 Открыть настройки
