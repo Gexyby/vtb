@@ -45,7 +45,7 @@ export function Button({
       'bg-[var(--vtb-blue)] text-white shadow-[0_8px_24px_rgba(0,87,184,0.28)] hover:bg-[var(--vtb-blue-deep)]',
     secondary:
       'bg-[var(--surface)] text-[var(--vtb-navy)] border border-[var(--border)] hover:border-[var(--vtb-blue)] hover:text-[var(--vtb-blue)]',
-    ghost: 'bg-transparent text-[var(--muted)] hover:bg-[var(--surface-2)]',
+    ghost: 'bg-transparent text-[var(--foreground)] hover:bg-[var(--surface-2)]',
     danger: 'bg-rose-600 text-white hover:bg-rose-700',
     outline:
       'border border-[var(--vtb-blue)] text-[var(--vtb-blue)] bg-[var(--surface)] hover:bg-[var(--vtb-tint)]',
@@ -58,7 +58,7 @@ export function Button({
   return (
     <button
       className={cn(
-        'inline-flex items-center justify-center gap-2 rounded-xl font-medium transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--vtb-blue)] disabled:cursor-not-allowed disabled:opacity-50',
+        'inline-flex items-center justify-center gap-2 rounded-xl font-medium transition focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--vtb-blue)] disabled:cur[...]',
         variants[variant],
         sizes[size],
         className,
@@ -73,7 +73,7 @@ export function Button({
 }
 
 const fieldClass =
-  'w-full rounded-xl border border-[var(--border)] bg-[var(--surface)] px-3.5 py-2.5 text-sm text-[var(--foreground)] shadow-sm outline-none transition placeholder:text-slate-400 focus:border-[var(--vtb-blue)] focus:ring-4 focus:ring-[var(--vtb-tint)]'
+  'w-full rounded-xl border border-[var(--border)] bg-[var(--surface)] px-3.5 py-2.5 text-sm text-[var(--foreground)] shadow-sm outline-none transition placeholder:text-slate-400 focus:border-[var[...]'
 
 export function Field({
   label,
@@ -389,7 +389,7 @@ export function FileUpload({
       <button
         type="button"
         onClick={() => ref.current?.click()}
-        className="flex w-full flex-col items-center rounded-xl border border-dashed border-slate-300 bg-slate-50 px-4 py-6 text-sm text-slate-600 hover:border-[var(--vtb-blue)] hover:bg-[var(--vtb-tint)]"
+        className="flex w-full flex-col items-center rounded-xl border border-dashed border-slate-300 bg-slate-50 px-4 py-6 text-sm text-slate-600 hover:border-[var(--vtb-blue)] hover:bg-[var(--v[...]"
       >
         <Upload className="mb-2 h-5 w-5 text-[var(--vtb-blue)]" />
         Выберите файл (PDF, JPG, PNG, WEBP)
@@ -458,7 +458,7 @@ export function Tooltip({ label, children }: { label: string; children: ReactNod
   return (
     <span className="group relative inline-flex">
       {children}
-      <span className="pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 hidden -translate-x-1/2 whitespace-nowrap rounded-lg bg-slate-900 px-2 py-1 text-xs text-white group-hover:block group-focus-within:block">
+      <span className="pointer-events-none absolute bottom-full left-1/2 z-20 mb-2 hidden -translate-x-1/2 whitespace-nowrap rounded-lg bg-slate-900 px-2 py-1 text-xs text-white group-hover:block[...]">
         {label}
       </span>
     </span>
