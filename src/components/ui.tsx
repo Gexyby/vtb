@@ -45,7 +45,7 @@ export function Button({
       'bg-[var(--vtb-blue)] text-white shadow-[0_8px_24px_rgba(0,87,184,0.28)] hover:bg-[var(--vtb-blue-deep)]',
     secondary:
       'bg-[var(--surface)] text-[var(--vtb-navy)] border border-[var(--border)] hover:border-[var(--vtb-blue)] hover:text-[var(--vtb-blue)]',
-    ghost: 'bg-transparent text-[var(--foreground)] hover:bg-[var(--surface-2)]',
+    ghost: 'bg-transparent text-[var(--muted)] hover:bg-[var(--surface-2)]',
     danger: 'bg-rose-600 text-white hover:bg-rose-700',
     outline:
       'border border-[var(--vtb-blue)] text-[var(--vtb-blue)] bg-[var(--surface)] hover:bg-[var(--vtb-tint)]',
